@@ -51,18 +51,10 @@ namespace SPZ_Lab4
         {
             if(filePath != null)
             {
-                SaveFileDialog saveFileDialog = new SaveFileDialog();
-
-                saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-                saveFileDialog.Filter = "out files (*.out)|*.out";
-                saveFileDialog.CreatePrompt = true;
-                saveFileDialog.OverwritePrompt = true;
-
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                    outputPath = saveFileDialog.FileName;
+                outputPath = filePath.Replace(Path.GetExtension(filePath), ".out");
 
                 string text = File.ReadAllText(filePath);
-               string[] arrayNumbers = text.Split(',');
+                string[] arrayNumbers = text.Split(',');
                 int count = 1;
                 using(StreamWriter sw = new StreamWriter(outputPath))
                 { 
@@ -82,7 +74,8 @@ namespace SPZ_Lab4
                         {
                             sw.Write(count);
                         }
-                    }
+                 }
+                    MessageBox.Show($"Результат записан в файл {Path.GetFileName(outputPath)}");
                 }
             }
            else MessageBox.Show("Вы не выбрали исходный файл!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);

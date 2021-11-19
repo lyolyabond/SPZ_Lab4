@@ -53,12 +53,12 @@
             // 
             this.writeOutput_button.BackColor = System.Drawing.Color.LightGreen;
             this.writeOutput_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.writeOutput_button.Location = new System.Drawing.Point(400, 93);
+            this.writeOutput_button.Location = new System.Drawing.Point(420, 93);
             this.writeOutput_button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.writeOutput_button.Name = "writeOutput_button";
-            this.writeOutput_button.Size = new System.Drawing.Size(172, 82);
+            this.writeOutput_button.Size = new System.Drawing.Size(151, 82);
             this.writeOutput_button.TabIndex = 2;
-            this.writeOutput_button.Text = "Выбрать файл для сохранения результата";
+            this.writeOutput_button.Text = "Записать результат\r\n";
             this.writeOutput_button.UseVisualStyleBackColor = false;
             this.writeOutput_button.Click += new System.EventHandler(this.writeOutput_button_Click);
             // 
@@ -90,11 +90,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(378, 34);
+            this.label2.Location = new System.Drawing.Point(365, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 40);
+            this.label2.Size = new System.Drawing.Size(277, 40);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Выберите файл (.out) \r\nдля результата вычислений:";
+            this.label2.Text = "Нажмите кнопку, \r\nчтобы записать результат в файл:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
@@ -113,7 +113,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1044, 250);
+            this.ClientSize = new System.Drawing.Size(1020, 249);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
